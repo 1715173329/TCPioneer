@@ -65,6 +65,7 @@ const (
 	OPT_MSS   = 0x1 << 9
 	OPT_WTFO  = 0x1 << 10
 	OPT_WULEN = 0x1 << 11
+	OPT_SYNX2 = 0x1 << 12
 
 	OPT_MODE2  = 0x10000 << 0
 	OPT_TFO    = 0x10000 << 1
@@ -89,6 +90,7 @@ var MethodMap = map[string]uint32{
 	"https":  OPT_HTTPS,
 	"w-tfo":  OPT_WTFO,
 	"w-ulen": OPT_WULEN,
+	"synx2":  OPT_SYNX2,
 
 	"mode2":   OPT_MODE2,
 	"tfo":     OPT_TFO,

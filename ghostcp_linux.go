@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"runtime"
 
 	"./ghostcp"
@@ -51,13 +50,6 @@ func StartService() {
 }
 
 func StopService() {
-	arg := []string{"-HUP mDNSResponder"}
-	cmd := exec.Command("killall", arg...)
-	d, err := cmd.CombinedOutput()
-	if err != nil {
-		log.Println(string(d), err)
-	}
-
 	os.Exit(0)
 }
 

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"./header"
+	"./ghostcp"
 	"github.com/chai2010/winsvc"
 )
 
